@@ -10,6 +10,7 @@ import { CodiconFeedback } from '@/components/icon/feedback'
 import { useForm } from 'antd/es/form/Form'
 import i18next from 'i18next'
 import { ProviderSetting } from './provider'
+import { BedrockSettings } from './bedrock'
 
 export const SettingsForm: React.FC = () => {
   const { loading, settings, setSettings } = useSettings()
@@ -73,6 +74,7 @@ export const SettingsForm: React.FC = () => {
         <div className="max-w-4xl w-[800px] flex flex-col gap-4">
           <ProviderSetting />
           <OPENAISettings />
+          <BedrockSettings />
           <SystemSetting />
         </div>
       </Form>

@@ -58,6 +58,7 @@ export const getSetting = async () => {
     ...((await browser.storage.local.get(key))?.[key] || {}),
     ...((await browser.storage.sync.get(key))?.[key] || {}),
   }
+  console.log('getSetting')
 
   patchDefaultSetting(res)
   patchCustomInstructions(res)
@@ -69,12 +70,14 @@ export const getSetting = async () => {
   return res as Settings
 }
 
+//TODO
 export const saveSetting = async (newSettings: Partial<Settings>) => {
   const settings = {
     ...(await getSetting()),
     ...newSettings,
   }
-
+  //添加代码片段，打印方法名
+  console.log('saveSetting')
   // 只有 customInstruction 存在本地
   const localNewSettings = settings.customInstructions
     ? {
@@ -86,9 +89,12 @@ export const saveSetting = async (newSettings: Partial<Settings>) => {
   browser.storage.sync.set({
     [key]: remoteSettings,
   })
+  //添加代码打印写入storage的value
+  console.log('saveSetting', remoteSettings)
 
   if (localNewSettings) {
     browser.storage.local.set({ [key]: localNewSettings })
+    console.log('browser.storage.local.set', localNewSettings)
   }
 }
 
@@ -103,7 +109,6 @@ const patchCustomInstructions = (setting: Settings) => {
           icon: '😄',
         }
       }
-
       return instruction
     }) || []
 }

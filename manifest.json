@@ -1,11 +1,11 @@
 {
-  "name": "Writely",
-  "version": "1.0.0",
+  "name": "SpringQuill",
+  "version": "3.0.0",
   "description": "A GPT Powered Extension helping your writing and reading",
   "manifest_version": 3,
   "author": "https://github.com/anc95",
   "action": {
-    "default_title": "Writely",
+    "default_title": "SpringQuill",
     "default_popup": "dist/popup/index.html",
     "defult_icon": "dist/assets/icon.png"
   },
@@ -37,7 +37,7 @@
     "service_worker": "dist/background/index.js"
   },
   "host_permissions": [
-    "https://*.miao-ya.com/"
+    "https://hello.xcaoliu.com/"
   ],
   "permissions": [
     "storage",

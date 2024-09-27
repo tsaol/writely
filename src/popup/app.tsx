@@ -12,6 +12,7 @@ export const App: React.FC = () => {
           onClick={() => {
             const url = browser.runtime.getURL('dist/options/index.html')
             window.open(url)
+            console.log('open options page and Url is ')
           }}
         >
           <DashiconsAdminGeneric />

@@ -9,6 +9,7 @@ export enum ServiceProvider {
   Writely = 'writely',
   OpenAI = 'openai',
   ChatGPT = 'chatgpt',
+  Bedrock = 'bedrock',
 }
 
 export type Settings = {
@@ -20,4 +21,8 @@ export type Settings = {
   customInstructions?: Instruction[]
   debug?: boolean
   serviceProvider?: ServiceProvider
+  bedrockAccessKey?: string
+  bedrockSecretKey?: string
+  bedrockRegion?: string
+  bedrockModel?: string
 }

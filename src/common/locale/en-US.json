@@ -10,5 +10,21 @@
   "Replace": "Replace",
   "Prompt template": "{{task}}:\n {{content}}",
   "Senior Writer": "Senior Writer",
-  "Send to writely": "Send to writely"
+  "Send to writely": "Send to writely",
+  "Service Provider": "Service Provider",
+  "Bedrock Claude": "Bedrock Claude",
+  "Using Amazon Bedrock Claude model. You need to provide your own Bedrock API key and region.": "Using Amazon Bedrock Claude model. You need to provide your own Bedrock API key and region.",
+  "Bedrock Access Key": "Bedrock Access Key",
+  "Bedrock Secret Key": "Bedrock Secret Key",
+  "Please input your Bedrock Access Key!": "Please input your Bedrock Access Key!",
+  "Please input your Bedrock Secret Key!": "Please input your Bedrock Secret Key!",
+  "Bedrock Region": "Bedrock Region",
+  "Please select your Bedrock Region!": "Please select your Bedrock Region!",
+  "Bedrock Model": "Bedrock Model",
+  "Please select a Bedrock Model!": "Please select a Bedrock Model!",
+  "Claude 3 Haiku": "Claude 3 Haiku",
+  "Claude 3 Sonnet": "Claude 3 Sonnet",
+  "Claude 3 Opus": "Claude 3 Opus",
+  "Claude v2": "Claude v2",
+  "Claude v1": "Claude v1"
 }

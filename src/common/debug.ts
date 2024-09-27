@@ -1,7 +1,7 @@
 import { getSetting } from './store/settings'
 
 class Logger {
-  private _debug = false
+  private _debug = true
 
   constructor() {
     this.init()

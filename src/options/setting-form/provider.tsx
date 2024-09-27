@@ -1,6 +1,6 @@
 import { OpenAILogo } from '@/components/icon/open-ai'
 import { IconWritely } from '@/components/icon/writely'
-import { Card, Form, Popover, Radio, Spin, Tooltip } from 'antd'
+import { Card, Form, Radio, Tooltip, Spin } from 'antd'
 import i18next from 'i18next'
 import { ServiceProvider } from '../types'
 import classNames from 'classnames'
@@ -10,6 +10,7 @@ import Link from 'antd/es/typography/Link'
 import { MaterialSymbolsCheckCircleRounded } from '@/components/icon/checked'
 import { ChatGPTIcon } from '@/components/icon/chatgpt'
 import { useChatGPTWebInfo } from '@/common/api/chatgpt-web'
+import { BedrockSettings } from './bedrock'
 
 export const ProviderSetting: React.FC = () => {
   const value = Form.useWatch('serviceProvider')
@@ -18,6 +19,7 @@ export const ProviderSetting: React.FC = () => {
   const isCheckedWritely = value === ServiceProvider.Writely
   const isCheckedOpenAI = value === ServiceProvider.OpenAI
   const isCheckedChatGPT = value === ServiceProvider.ChatGPT
+  const isCheckedBedrock = value === ServiceProvider.Bedrock
 
   return (
     <Card title={i18next.t('Service Provider')} hoverable>
@@ -90,11 +92,33 @@ export const ProviderSetting: React.FC = () => {
                 </div>
               </Tooltip>
             </Radio>
+            <Radio value={ServiceProvider.Bedrock}>
+              <Tooltip
+                title={i18next.t(
+                  'Using Amazon Bedrock Claude model. You need to provide your own Bedrock API key and endpoint.'
+                )}
+              >
+                <div
+                  style={{
+                    boxShadow: isCheckedBedrock
+                      ? '0px 3px rgb(252,211,77)'
+                      : '',
+                  }}
+                  className={classNames(
+                    'items-center py-3 px-5 rounded-full flex gap-2',
+                    isCheckedBedrock ? activeClassNames : ''
+                  )}
+                >
+                  <span className="font-semibold text-3xl">Bedrock</span>
+                </div>
+              </Tooltip>
+            </Radio>
           </Radio.Group>
         </div>
       </Form.Item>
       {isCheckedWritely ? <LinkToWritelySite /> : null}
       {isCheckedChatGPT ? <LinkToChatgptWeb /> : null}
+      {/* {isCheckedBedrock ? <BedrockSettings /> : null} */}
     </Card>
   )
 }

@@ -82,5 +82,20 @@
   "to connect": "关联",
   "Using the services provided by Writely, there are 10 free times per day": "使用 Writely 提供的服务，每天有 10 次的免费次数",
   "By using the services provided by OpenAI API Key, you can permanently use Writely software for free": "使用 OpenAI API Key 提供的服务，您可以永久免费使用 Writely 软件",
-  "Using the ChatGPT Web service is not recommended as it may carry the risk of being banned by OpenAI. Please consider this carefully. In case of account suspension, it is unrelated to Writely.": "使用ChatGPT Web的服务并不推荐，因为这可能会导致OpenAI封禁您的账号。请您自行权衡利弊。如果出现账号被封的情况，与Writely无关。"
+  "Using the ChatGPT Web service is not recommended as it may carry the risk of being banned by OpenAI. Please consider this carefully. In case of account suspension, it is unrelated to Writely.": "使用ChatGPT Web的服务并不推荐，因为这可能会导致OpenAI封禁您的账号。请您自行权衡利弊。如果出现账号被封的情况，与Writely无关。",
+  "Bedrock Claude": "Bedrock Claude",
+  "Using Amazon Bedrock Claude model. You need to provide your own Bedrock API key and region.": "使用亚马逊 Bedrock Claude 模型。您需要提供自己的 Bedrock API 密钥和区域。",
+  "Bedrock Access Key": "Bedrock 访问密钥",
+  "Bedrock Secret Key": "Bedrock 秘密密钥",
+  "Please input your Bedrock Access Key!": "请输入您的 Bedrock 访问密钥！",
+  "Please input your Bedrock Secret Key!": "请输入您的 Bedrock 秘密密钥！",
+  "Bedrock Region": "Bedrock 区域",
+  "Please select your Bedrock Region!": "请选择您的 Bedrock 区域！",
+  "Bedrock Model": "Bedrock 模型",
+  "Please select a Bedrock Model!": "请选择一个 Bedrock 模型！",
+  "Claude 3 Haiku": "Claude 3 俳句",
+  "Claude 3 Sonnet": "Claude 3 十四行诗",
+  "Claude 3 Opus": "Claude 3 歌剧",
+  "Claude v2": "Claude v2",
+  "Claude v1": "Claude v1"
 }
