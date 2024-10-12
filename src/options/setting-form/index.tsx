@@ -44,27 +44,7 @@ export const SettingsForm: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex justify-between lg:w-5/6 border-b mb-4 pt-6 pb-1">
-        <div className="font-semibold text-3xl">{i18next.t('Settings')}</div>
-        <div>
-          <div className="flex items-baseline text-xl gap-4">
-            <Tooltip title="Github">
-              <a href="https://github.com/anc95/writely">
-                <div className="p-2 rounded-sm hover:rounded-md bg-gray-50 hover:bg-gray-200 transition-all duration-300 cursor-pointer">
-                  <LogosGithubIcon />
-                </div>
-              </a>
-            </Tooltip>
-            <Tooltip title="Feedback">
-              <a href="https://github.com/anc95/writely/issues">
-                <div className="p-2 rounded-sm hover:rounded-md bg-gray-50 hover:bg-gray-200 transition-all duration-300 cursor-pointer">
-                  <CodiconFeedback />
-                </div>
-              </a>
-            </Tooltip>
-          </div>
-        </div>
-      </div>
+      <div className="flex justify-between lg:w-5/6 border-b mb-4 pt-6 pb-1"></div>
       <Form
         onValuesChange={handleFormChange}
         initialValues={settings}

@@ -29,28 +29,6 @@ export const ProviderSetting: React.FC = () => {
             className="flex justify-center w-full"
             onChange={(e) => console.log(e.target.value)}
           >
-            <Radio value={ServiceProvider.Writely}>
-              <Tooltip
-                title={i18next.t(
-                  'Using the services provided by Writely, there are 10 free times per day'
-                )}
-              >
-                <div
-                  style={{
-                    boxShadow: isCheckedWritely
-                      ? '0px 3px rgb(252,211,77)'
-                      : '',
-                  }}
-                  className={classNames(
-                    'flex gap-2 justify-center items-center py-3 px-5 rounded-full',
-                    isCheckedWritely ? activeClassNames : ''
-                  )}
-                >
-                  <IconWritely className="h-11" />
-                  <span className="font-semibold text-3xl">Writely</span>
-                </div>
-              </Tooltip>
-            </Radio>
             <Radio value={ServiceProvider.OpenAI}>
               <Tooltip
                 title={i18next.t(

@@ -1,9 +1,9 @@
 {
   "name": "SpringQuill",
   "version": "3.0.0",
-  "description": "A GPT Powered Extension helping your writing and reading",
+  "description": "Smart Writing and Reading Assistant: Your AI-Powered Browser Companion",
   "manifest_version": 3,
-  "author": "https://github.com/anc95",
+  "author": "cc6776",
   "action": {
     "default_title": "SpringQuill",
     "default_popup": "dist/popup/index.html",
@@ -14,10 +14,10 @@
     "open_in_tab": true
   },
   "icons": {
-    "16": "dist/assets/icon.png",
-    "32": "dist/assets/icon.png",
-    "48": "dist/assets/icon.png",
-    "128": "dist/assets/icon.png"
+    "16": "dist/assets/icon16.png",
+    "32": "dist/assets/icon32.png",
+    "48": "dist/assets/icon48.png",
+    "128": "dist/assets/icon128.png"
   },
   "content_scripts": [
     {

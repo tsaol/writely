@@ -73,7 +73,7 @@ const getToken = async () => {
         (
           await browser.cookies.get({
             name: 'supabase-auth-token',
-            url: 'https://writely.miao-ya.com',
+            url: 'https://www.cc6776.com',
           })
         ).value || ''
       )
